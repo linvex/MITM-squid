@@ -29,14 +29,6 @@ while (<>) {
 		print "http://192.168.56.1/images/$pid-$count.png\n";
 #		print "http://192.168.56.1/images/1.jpg\n";
 	}
-#	elsif ($_ =~ /(.*\.bmp)/i) {
-#		$url = $1;
-#		system("/usr/bin/wget", "-q", "-O","/mydoc/test/images/$pid-$count.bmp", "$url");
-#		system("/usr/bin/mogrify", "-flip","/mydoc/test/images/$pid-$count.bmp");
-#		system("/bin/chmod", "644", "/mydoc/test/images/$pid-$count.bmp");
-#		print "http://192.168.56.1/images/$pid-$count.bmp\n";
-#		print "http://192.168.56.1/images/1.jpg\n";
-#	}
 	else {
 		print "$_\n";;
 	}
